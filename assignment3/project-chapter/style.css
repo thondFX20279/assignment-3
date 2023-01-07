@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 10px;
+}
+.btn-timeline {
+  background-color: pink;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+#project > div {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(222, 221, 221);
+}
+/* project */
+#project {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: blue;
+}
+
+/* title  ultinities*/
+h3.title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  color: blue;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+/* icon */
+.icon {
+  font-size: 24px;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+/* content */
+.content {
+  flex-basis: 75%;
+}
+/* goal */
+.goal {
+  border-bottom: 1px solid rgb(29 28 28 / 21%);
+}
+/* team */
+
+#timeline {
+  grid-row: span 2;
+}
+.timeline {
+  border-bottom: 2px dashed green;
+}
+
+/* scope */
+
+/* primary */
+
+@media only screen and (max-width: 991px) {
+  #project {
+    grid-template-areas:
+      "goal"
+      "scope"
+      "team"
+      "primary"
+      "timeline";
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+  #goal {
+    grid-area: goal;
+  }
+  #team {
+    grid-area: team;
+  }
+  #scope {
+    grid-area: scope;
+  }
+  #primary {
+    grid-area: primary;
+  }
+  #timeline {
+    grid-area: timeline;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .in,
+  .out,
+  .content,
+  .icon {
+    width: 100%;
+  }
+
+  .in {
+    margin-bottom: 20px;
+  }
+  .btn-timeline {
+    margin: 0 0 10px 0;
+  }
+}

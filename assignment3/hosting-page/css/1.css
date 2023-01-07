@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+  --primary-color: #047aed;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --secondary-color: #1c3fa8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  font-family: "lato", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+img {
+  width: 100%;
+}
+
+/* header */
+#header {
+  background-color: var(--primary-color);
+  height: 70px;
+  color: #fff;
+}
+#header .flex {
+  justify-content: space-between;
+}
+#header ul {
+  display: flex;
+}
+#header a {
+  color: #fff;
+  padding: 10px;
+  margin: 0px 5px;
+}
+#header a:hover {
+  border-bottom: 2px solid #fff;
+}
+/* showcase */
+.showcase {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 350px;
+  position: relative;
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0px;
+}
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+.showcase-form {
+  width: 400px;
+  height: 350px;
+  position: relative;
+  top: 60px;
+  z-index: 100;
+  justify-self: end;
+  padding: 40px;
+}
+.showcase-form .form-control {
+  margin: 30px 0px;
+}
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #b4becb;
+  padding: 5px;
+  font-size: 15px;
+}
+.form-control input:focus {
+  outline: none;
+}
+/* slen */
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+}
+
+/* stats */
+.stats {
+  padding-top: 100px;
+}
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+.stats .grid h3 {
+  font-size: 35px;
+}
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+/* clid */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+/* cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+.language .flex {
+  flex-wrap: wrap;
+}
+.language .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+}

@@ -1,0 +1,85 @@
+/* mobile */
+@media screen and (max-width: 767px) {
+  .grid,
+  #job-info .grid,
+  #project .grid {
+    grid-template-columns: 1fr;
+  }
+  /* banner */
+  #nav-bar .container {
+    padding: 0px 20px;
+  }
+
+  #banner {
+    margin: 0;
+  }
+  section > .container {
+    padding: 30px 20px;
+  }
+  /* navbar */
+  #nav-bar .container {
+    padding: 0px 20px;
+  }
+  #nav-bar .text {
+    display: none;
+  }
+  #nav-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+  #nav-bar .nav-info {
+    flex-basis: 100%;
+    border: none;
+    line-height: 1.6;
+  }
+  /* about */
+  #personal-info,
+  #target {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  /* justificate */
+  #certificate .grid .flex {
+    flex-wrap: wrap;
+    border: none;
+    border-bottom: 1px solid orange;
+  }
+  #certificate .flex .box-img {
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .certificate-box3 {
+    padding-top: 0;
+  }
+  /* project */
+  #project .info {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  #project .flex1 .right {
+    flex-direction: column;
+  }
+  #project .info .company,
+  #project .info .position {
+    padding-top: 20px;
+  }
+  /* footer */
+  #footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer .box {
+    margin: 5px 0;
+  }
+  #footer a {
+    padding: 5px 0;
+  }
+  #footer i {
+    font-size: 150%;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}

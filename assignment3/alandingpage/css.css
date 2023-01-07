@@ -1,0 +1,119 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background: rgb(206, 197, 197);
+}
+a {
+  text-decoration: none;
+}
+
+.section-padding {
+  padding: 25px 0;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  font-size: 18px;
+  line-height: 1.9;
+  margin: auto;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.w-100 {
+  height: 100vh;
+}
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar .navbar-brand {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.navbar.navbar-brand:focus,
+.navbar.navbar-brand:hover {
+  color: black;
+}
+.navbar .nav-link {
+  color: black;
+}
+.navbar .nav-link:hover {
+  background-color: black;
+  color: #f1fbff;
+}
+/* services */
+.services .card i {
+  font-size: 44px;
+  color: red;
+}
+/* team */
+
+.team .card i {
+  font-size: 32px;
+  margin-left: 10px;
+  color: blue;
+}
+.team .card i:hover {
+  color: pink;
+}
+/* footer */
+.footer a {
+  color: rgb(107, 105, 105);
+}
+/* responsive css */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+
+  .carousel-caption p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* nav */
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 100px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .carousel-caption a {
+    font-size: 12px;
+  }
+  /* about-text */
+}
